@@ -1,43 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    api-level="16"
-    density="420dpi"
+    api-level="24"
+    density="560dpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="206038832098981"
+    timestamp="263440269350168"
     token="-5796556235752595599"
-    verifier="COMPATIBLE" >
+    verifier="R_CLASS_CHANGE" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="2855" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="59" />
     <task
         name="verifier"
-        duration="0" />
+        duration="22" />
 
     <artifact
         location="/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
         type="RESOURCES" />
+    <artifact
+        location="/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
+        type="DEX" />
+    <artifact
+        location="/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+        type="DEX" />
 
     <build
-        timestamp="204616682723370"
+        timestamp="252025756731710"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/ruiguo/Desktop/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="206038832098981"
-        verifier="COMPATIBLE" >
+        timestamp="262783543197949"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="263440269350168"
+        verifier="R_CLASS_CHANGE" >
         <artifact
             location="/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
             type="RESOURCES" />
+        <artifact
+            location="/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

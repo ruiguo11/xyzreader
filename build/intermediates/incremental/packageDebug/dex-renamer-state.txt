@@ -1,4 +1,7 @@
-#Wed Sep 28 22:44:54 NZDT 2016
-base.0=/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/1f/main
-renamed.0=classes.dex
-file.0=/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+#Sun Oct 09 17:28:49 NZDT 2016
+base.0=/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_9fc1a91e6ead48afa39383e5e8c67413c133c090
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_acf2cea95326a095e147fbc59fabde113a1b5343/classes.dex
+base.1=/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_acf2cea95326a095e147fbc59fabde113a1b5343
+file.0=/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_9fc1a91e6ead48afa39383e5e8c67413c133c090/classes.dex
