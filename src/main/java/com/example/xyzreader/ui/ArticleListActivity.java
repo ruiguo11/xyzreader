@@ -1,6 +1,8 @@
 package com.example.xyzreader.ui;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.app.LoaderManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -8,15 +10,22 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.Loader;
 import android.database.Cursor;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.text.format.DateUtils;
+import android.transition.Fade;
+import android.transition.Slide;
+import android.transition.TransitionInflater;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
@@ -40,7 +49,9 @@ public class ArticleListActivity extends Activity implements
     private Toolbar mToolbar;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private RecyclerView mRecyclerView;
+private String SELECTED_POSITION="selected_position";
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +60,7 @@ public class ArticleListActivity extends Activity implements
         ((CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar_layout)).setTitle("Eclairs");
 
 
-
+        setupWindowAnimations();
 
 
         //final View toolbarContainerView = findViewById(R.id.toolbar_container);
@@ -62,6 +73,15 @@ public class ArticleListActivity extends Activity implements
         if (savedInstanceState == null) {
             refresh();
         }
+
+    }
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    private void setupWindowAnimations() {
+        Fade fade = new Fade();
+
+        fade.setDuration(1000);
+        getWindow().setExitTransition(fade);
+        getWindow().setEnterTransition(fade);
     }
 
     private void refresh() {
@@ -136,11 +156,27 @@ public class ArticleListActivity extends Activity implements
             View view = getLayoutInflater().inflate(R.layout.list_item_article, parent, false);
             final ViewHolder vh = new ViewHolder(view);
             view.setOnClickListener(new View.OnClickListener() {
+                @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
                 @Override
                 public void onClick(View view) {
+
+                    /*
+
+                    Intent intent = new Intent(Intent.ACTION_VIEW, ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition())));
+                    intent.putExtra(SELECTED_POSITION, getItemId(vh.getAdapterPosition()));
+                    Log.d("SelectPosition", "_"+vh.getAdapterPosition());
+                    //View sharedView = view;
+                    DynamicHeightNetworkImageView sharedView = (DynamicHeightNetworkImageView)findViewById(R.id.thumbnail);
+                    Bundle bundle= ActivityOptions.makeSceneTransitionAnimation(ArticleListActivity.this, sharedView, sharedView.getTransitionName()).toBundle();
+                    startActivity(intent, bundle);
+
+*/
+
+
                     startActivity(new Intent(Intent.ACTION_VIEW,
                             ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))));
-                }
+
+                    }
             });
             return vh;
         }
@@ -159,8 +195,19 @@ public class ArticleListActivity extends Activity implements
             holder.thumbnailView.setImageUrl(
                     mCursor.getString(ArticleLoader.Query.THUMB_URL),
                     ImageLoaderHelper.getInstance(ArticleListActivity.this).getImageLoader());
+           /*
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                holder.thumbnailView.setTransitionName(getString(R.string.transition_photo)+"_"+position);
+
+
+            }
+            */
+
             holder.thumbnailView.setAspectRatio(mCursor.getFloat(ArticleLoader.Query.ASPECT_RATIO));
         }
+
+
+
 
         @Override
         public int getItemCount() {
@@ -176,6 +223,7 @@ public class ArticleListActivity extends Activity implements
         public ViewHolder(View view) {
             super(view);
             thumbnailView = (DynamicHeightNetworkImageView) view.findViewById(R.id.thumbnail);
+
             titleView = (TextView) view.findViewById(R.id.article_title);
             subtitleView = (TextView) view.findViewById(R.id.article_subtitle);
         }

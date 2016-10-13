@@ -29,7 +29,7 @@
         <item name = "colorPrimary">@color/pink_500</item>
         <item name = "colorPrimaryDark">@color/pink_700</item>
         <item name = "colorAccent">@color/blue_500</item>
-
+        <item name="android:windowContentTransitions">true</item>
     </style>
 
 </resources>
