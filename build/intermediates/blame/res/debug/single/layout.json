@@ -76,12 +76,12 @@
         "source": "/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/layout/design_navigation_item_separator.xml"
     },
     {
-        "merged": "/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_action_menu_item_layout.xml"
-    },
-    {
         "merged": "/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/list_item_article.xml",
         "source": "/Users/ruiguo/Desktop/xyzreader/XYZReader/src/main/res/layout/list_item_article.xml"
+    },
+    {
+        "merged": "/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_action_menu_item_layout.xml"
     },
     {
         "merged": "/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",

@@ -1,56 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    api-level="23"
-    density="560dpi"
+    api-level="24"
+    density="420dpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="17280584914952"
+    timestamp="22938520412667"
     token="-5796556235752595599"
-    verifier="METHOD_DELETED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="178" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="28" />
+        duration="0" />
     <task
         name="verifier"
-        duration="2" />
-
-    <artifact
-        location="/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
-        type="DEX" />
+        duration="0" />
 
     <build
-        timestamp="14919544942735"
-        verifier="MANIFEST_FILE_CHANGE" >
+        timestamp="21710929197594"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/ruiguo/Desktop/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="16051049936590"
+        timestamp="22886073347481"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
             type="RESOURCES" />
         <artifact
-            location="/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="17280584914952"
-        verifier="METHOD_DELETED" >
-        <artifact
             location="/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
             type="DEX" />
     </build>
+    <build
+        timestamp="22938520412667"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>
