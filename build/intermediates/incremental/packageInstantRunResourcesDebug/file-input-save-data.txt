@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Oct 14 18:29:41 NZDT 2016
+#Fri Oct 14 18:37:00 NZDT 2016
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/res/resources-debug.ap_/res/layout/abc_action_menu_item_layout.xml
