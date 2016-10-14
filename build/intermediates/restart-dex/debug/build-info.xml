@@ -1,53 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     api-level="24"
-    density="560dpi"
+    density="420dpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="25166442943223"
-    token="-5796556235752595599" >
+    timestamp="32123088207826"
+    token="-5796556235752595599"
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="2418" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="535" />
     <task
         name="verifier"
-        duration="0" />
+        duration="41" />
+
+    <artifact
+        location="/Users/ruiguo/Desktop/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="24386387411783"
+        timestamp="32123088207826"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/ruiguo/Desktop/xyzreader/XYZReader/build/outputs/apk/XYZReader-debug.apk"
             type="MAIN" />
     </build>
-    <build
-        timestamp="24613664832487"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="24716453317088"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/builds/debug/24716453317088/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="25156969928731"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
-    </build>
-    <build timestamp="25166442943223" />
 
 </instant-run>

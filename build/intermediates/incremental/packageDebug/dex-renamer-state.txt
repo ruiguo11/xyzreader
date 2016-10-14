@@ -1,4 +1,4 @@
-#Fri Oct 14 18:24:51 NZDT 2016
+#Fri Oct 14 21:39:50 NZDT 2016
 base.0=/Users/ruiguo/Desktop/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_9fc1a91e6ead48afa39383e5e8c67413c133c090
 renamed.1=classes.dex
 renamed.0=classes2.dex
