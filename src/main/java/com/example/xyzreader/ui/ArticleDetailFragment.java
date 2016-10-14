@@ -16,6 +16,7 @@ import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.app.ShareCompat;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.graphics.Palette;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
@@ -204,17 +205,12 @@ public class ArticleDetailFragment extends Fragment implements
         bylineView.setMovementMethod(new LinkMovementMethod());
         TextView bodyView = (TextView) mRootView.findViewById(R.id.article_body);
         bodyView.setTypeface(Typeface.createFromAsset(getResources().getAssets(), "Rosario-Regular.ttf"));
-        ActionBarActivity actionBarActivity = (ActionBarActivity) getActivity();
+        AppCompatActivity actionBarActivity = (AppCompatActivity) getActivity();
 
         Toolbar toolbar = (Toolbar)mRootView.findViewById(R.id.details_toolbar);
         actionBarActivity.setSupportActionBar(toolbar);
-        //actionBarActivity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        //toolbar.setBackgroundColor(getResources().getColor(R.color.pink_500));
 
         collapsingToolbarLayout = (CollapsingToolbarLayout)mRootView.findViewById(R.id.details_collapsing_toolbar_layout);
-
-
-
 
 
         if (mCursor != null) {
